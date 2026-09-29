@@ -1,0 +1,41 @@
+name: Refresh Dubai gold rates
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-dubai-gold
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch Khaleej Times rates
+        id: fetch
+        run: node scripts/refresh-dubai-gold.mjs
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet dubai-gold.json; then
+            echo "dubai-gold.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dubai-gold.json
+          git commit -m "chore: refresh Dubai gold rates from Khaleej Times [skip ci]"
+          git push
