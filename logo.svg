@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <g fill="#C9A86A">
+    <circle cx="22" cy="18" r="2.2"/><circle cx="30" cy="14" r="2.2"/><circle cx="38" cy="14" r="2.2"/>
+    <circle cx="46" cy="18" r="2.2"/><circle cx="14" cy="26" r="2.2"/><circle cx="54" cy="26" r="2.2"/>
+    <circle cx="14" cy="36" r="2.2"/><circle cx="54" cy="36" r="2.2"/>
+    <circle cx="22" cy="44" r="2.2"/><circle cx="30" cy="48" r="2.2"/><circle cx="38" cy="48" r="2.2"/>
+    <circle cx="46" cy="44" r="2.2"/>
+    <circle cx="34" cy="31" r="6" fill="none" stroke="#C9A86A" stroke-width="1.5"/>
+    <circle cx="34" cy="31" r="2.5"/>
+  </g>
+  <text x="68" y="28" font-family="Georgia, serif" font-size="18" fill="#F4EFE6" letter-spacing="2">JASMA</text>
+  <text x="68" y="44" font-family="Georgia, serif" font-size="9" fill="#C9A86A" letter-spacing="3.5">JEWELLERS</text>
+</svg>
