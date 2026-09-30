@@ -1,12 +1,12 @@
 {
-  "rate24k": 508,
-  "rate22k": 470.5,
-  "rate21k": 451,
-  "rate18k": 386.75,
-  "ounce": 15801,
+  "rate24k": 499.75,
+  "rate22k": 462.75,
+  "rate21k": 443.75,
+  "rate18k": 380.5,
+  "ounce": 15544,
   "source": "Khaleej Times · UAE Gold Rate",
   "sourceUrl": "https://www.khaleejtimes.com/gold-forex",
   "live": true,
-  "fetchedAt": "2026-09-30T17:19:05.063Z",
+  "fetchedAt": "2026-09-30T21:28:50.851Z",
   "refreshedBy": "github-actions"
 }
